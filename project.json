@@ -1,0 +1,90 @@
+{
+  "name": "Norwegian Endurance Athlete ECG Dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard interactivo para análisis ECG de atletas de resistencia noruegos usando técnicas de procesamiento de señales biológicas",
+  "author": "Felipe Rangel",
+  "institution": "Pontificia Universidad Javeriana - Maestría en Inteligencia Artificial",
+  "course": "Procesamiento de Señales Biológicas",
+  "semester": "2025-1",
+  "license": "Academic Use",
+  "keywords": [
+    "ECG",
+    "Signal Processing",
+    "Biomedical",
+    "Athletes",
+    "Heart Rate Variability",
+    "FFT",
+    "Digital Filtering",
+    "Python",
+    "Plotly",
+    "Dashboard"
+  ],
+  "technologies": [
+    "Python 3.8+",
+    "NumPy",
+    "SciPy",
+    "Plotly",
+    "Pandas",
+    "NeuroKit2",
+    "Scikit-learn",
+    "Matplotlib",
+    "WFDB"
+  ],
+  "features": [
+    "Interactive ECG Dashboard",
+    "12-Lead ECG Analysis",
+    "Spectral Analysis (FFT)",
+    "Heart Rate Variability (HRV)",
+    "Digital Filtering",
+    "R-peak Detection",
+    "Statistical Analysis",
+    "Educational Explanations"
+  ],
+  "data": {
+    "source": "Norwegian Endurance Athlete ECG Database",
+    "records": 28,
+    "sampling_rate": "500 Hz",
+    "duration": "10 seconds",
+    "leads": 12,
+    "format": "WFDB (.dat/.hea)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/USERNAME/norwegian-endurance-athlete-ecg-dashboard.git"
+  },
+  "scripts": {
+    "setup": "python -m venv venv && source venv/bin/activate && pip install -r requirements.txt",
+    "run": "source venv/bin/activate && python main.py",
+    "github": "./setup_github.sh"
+  },
+  "requirements": {
+    "python": ">=3.8",
+    "packages": [
+      "wfdb==4.1.0",
+      "numpy==1.24.3",
+      "scipy==1.10.1",
+      "plotly==5.15.0",
+      "pandas>=1.0.0,<2.0.0",
+      "neurokit2==0.2.4",
+      "scikit-learn==1.3.0",
+      "matplotlib==3.7.2"
+    ]
+  },
+  "academic": {
+    "semester_techniques": [
+      "Fast Fourier Transform (FFT)",
+      "Digital Filtering (Butterworth)",
+      "R-peak Detection",
+      "Heart Rate Variability Analysis",
+      "Signal Normalization",
+      "Statistical Analysis"
+    ],
+    "learning_objectives": [
+      "Apply biomedical signal processing techniques",
+      "Implement ECG analysis algorithms",
+      "Create interactive data visualizations",
+      "Compare automated vs manual ECG interpretation",
+      "Analyze athlete-specific ECG characteristics"
+    ]
+  }
+}
