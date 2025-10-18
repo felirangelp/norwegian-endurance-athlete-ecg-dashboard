@@ -53,7 +53,7 @@ Thumbs.db
 # norwegian-endurance-athlete-ecg-database-1.0.0/
 
 # Generated files
-dashboard.html
+# dashboard.html  # Comentado para permitir que se suba a GitHub Pages
 *.log
 
 # Temporary files
