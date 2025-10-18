@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard ECG - Atletas de Resistencia Noruegos | GitHub Pages</title>
+    <meta name="description" content="Dashboard interactivo para análisis ECG de 28 atletas de resistencia noruegos usando técnicas de procesamiento de señales biológicas">
+    <meta name="keywords" content="ECG, Signal Processing, Biomedical, Athletes, Heart Rate Variability, FFT, Dashboard">
+    <meta name="author" content="Felipe Rangel">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://felirangelp.github.io/norwegian-endurance-athlete-ecg-dashboard/">
+    <meta property="og:title" content="Dashboard ECG - Atletas de Resistencia Noruegos">
+    <meta property="og:description" content="Dashboard interactivo para análisis ECG usando técnicas de procesamiento de señales biológicas">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://felirangelp.github.io/norwegian-endurance-athlete-ecg-dashboard/">
+    <meta property="twitter:title" content="Dashboard ECG - Atletas de Resistencia Noruegos">
+    <meta property="twitter:description" content="Dashboard interactivo para análisis ECG usando técnicas de procesamiento de señales biológicas">
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .github-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .github-header h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        
+        .github-header p {
+            margin: 10px 0 0 0;
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+        
+        .github-links {
+            margin-top: 15px;
+        }
+        
+        .github-links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background: #24292e;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .github-links a:hover {
+            background: #0366d6;
+            transform: translateY(-2px);
+        }
+        
+        .dashboard-container {
+            background: white;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .info-banner {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .info-banner h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.8em;
+        }
+        
+        .info-banner p {
+            margin: 0;
+            opacity: 0.9;
+        }
+        
+        .dashboard-content {
+            padding: 0;
+        }
+        
+        .footer {
+            background: #24292e;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .footer h3 {
+            margin: 0 0 15px 0;
+            color: #0366d6;
+        }
+        
+        .footer p {
+            margin: 5px 0;
+            opacity: 0.8;
+        }
+        
+        .footer a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            min-width: 120px;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #0366d6;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .github-header h1 {
+                font-size: 2em;
+            }
+            
+            .github-header p {
+                font-size: 1em;
+            }
+            
+            .dashboard-container {
+                margin: 10px;
+            }
+            
+            .stats {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="github-header">
+        <h1>🏃‍♂️ Dashboard ECG - Atletas de Resistencia Noruegos</h1>
+        <p>Análisis interactivo de 28 atletas de élite usando técnicas de procesamiento de señales biológicas</p>
+        
+        <div class="github-links">
+            <a href="https://github.com/felirangelp/norwegian-endurance-athlete-ecg-dashboard" target="_blank">
+                📁 Ver Código Fuente
+            </a>
+            <a href="https://github.com/felirangelp/norwegian-endurance-athlete-ecg-dashboard/releases" target="_blank">
+                🏷️ Releases
+            </a>
+            <a href="https://github.com/felirangelp/norwegian-endurance-athlete-ecg-dashboard/blob/main/README.md" target="_blank">
+                📚 Documentación
+            </a>
+        </div>
+    </div>
+    
+    <div class="dashboard-container">
+        <div class="info-banner">
+            <h2>📊 Dashboard Interactivo</h2>
+            <p>Explora las visualizaciones interactivas del análisis ECG completo</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">28</div>
+                    <div class="stat-label">Atletas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Derivaciones</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500</div>
+                    <div class="stat-label">Hz</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Técnicas</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dashboard-content">
+            <!-- Aquí se carga el contenido del dashboard original -->
+        </div>
+    </div>
+    
+    <div class="footer">
+        <h3>🎓 Proyecto Académico</h3>
+        <p><strong>Pontificia Universidad Javeriana</strong> - Maestría en Inteligencia Artificial</p>
+        <p><strong>Curso:</strong> Procesamiento de Señales Biológicas | <strong>Semestre:</strong> 2025-1</p>
+        <p><strong>Autor:</strong> Felipe Rangel</p>
+        <p><strong>Versión:</strong> 1.0.0 | <strong>Última actualización:</strong> Octubre 2025</p>
+        
+        <div style="margin-top: 20px;">
+            <a href="https://github.com/felirangelp/norwegian-endurance-athlete-ecg-dashboard" target="_blank">GitHub Repository</a> |
+            <a href="https://github.com/felirangelp/norwegian-endurance-athlete-ecg-dashboard/blob/main/CHANGELOG.md" target="_blank">Changelog</a> |
+            <a href="https://github.com/felirangelp/norwegian-endurance-athlete-ecg-dashboard/blob/main/project.json" target="_blank">Project Info</a>
+        </div>
+    </div>
+    
+    <script>
+        // Cargar el contenido del dashboard original
+        fetch('dashboard.html')
+            .then(response => response.text())
+            .then(html => {
+                // Extraer solo el contenido del dashboard (sin el DOCTYPE y html tags)
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const dashboardContent = doc.querySelector('.container');
+                
+                if (dashboardContent) {
+                    document.querySelector('.dashboard-content').innerHTML = dashboardContent.outerHTML;
+                } else {
+                    // Fallback: mostrar mensaje si no se puede cargar
+                    document.querySelector('.dashboard-content').innerHTML = `
+                        <div style="padding: 40px; text-align: center;">
+                            <h3>📊 Dashboard ECG</h3>
+                            <p>El dashboard interactivo se está cargando...</p>
+                            <p><a href="dashboard.html" target="_blank">Abrir dashboard en nueva pestaña</a></p>
+                        </div>
+                    `;
+                }
+            })
+            .catch(error => {
+                console.error('Error cargando dashboard:', error);
+                document.querySelector('.dashboard-content').innerHTML = `
+                    <div style="padding: 40px; text-align: center;">
+                        <h3>⚠️ Error de Carga</h3>
+                        <p>No se pudo cargar el dashboard automáticamente.</p>
+                        <p><a href="dashboard.html" target="_blank">Abrir dashboard directamente</a></p>
+                    </div>
+                `;
+            });
+    </script>
+</body>
+</html>

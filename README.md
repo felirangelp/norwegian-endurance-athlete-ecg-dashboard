@@ -1,5 +1,18 @@
 # Dashboard ECG - Atletas de Resistencia Noruegos
 
+## 🌐 Ver Dashboard en Línea
+
+**¡El dashboard está disponible en GitHub Pages!**
+
+🔗 **[Ver Dashboard Interactivo](https://felirangelp.github.io/norwegian-endurance-athlete-ecg-dashboard/)**
+
+El dashboard incluye:
+- ✅ Visualizaciones interactivas de Plotly
+- ✅ Análisis de 28 atletas de resistencia
+- ✅ 12 derivaciones ECG con explicaciones
+- ✅ Análisis temporal, espectral y HRV
+- ✅ Comparación diagnóstica SL12 vs Cardiólogo
+
 ## Descripción del Proyecto
 
 Este proyecto implementa un análisis completo de señales ECG de 28 atletas de resistencia noruegos utilizando técnicas avanzadas de procesamiento de señales biológicas vistas durante el semestre.
