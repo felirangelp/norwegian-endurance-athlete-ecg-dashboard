@@ -1,5 +1,7 @@
 # Dashboard ECG - Atletas de Resistencia Noruegos
 
+**Versión:** 1.1.0 | **Última actualización:** Octubre 2025
+
 ## 🌐 Ver Dashboard en Línea
 
 **¡El dashboard está disponible en GitHub Pages!**
@@ -12,6 +14,7 @@ El dashboard incluye:
 - ✅ 12 derivaciones ECG con explicaciones
 - ✅ Análisis temporal, espectral y HRV
 - ✅ Comparación diagnóstica SL12 vs Cardiólogo
+- ✅ **NUEVO:** Documentación completa organizada en `docs/`
 
 ## Descripción del Proyecto
 
@@ -177,6 +180,20 @@ python main.py
 - `neurokit2==0.2.4` - Análisis de señales ECG
 - `scikit-learn==1.3.0` - Algoritmos de machine learning
 - `matplotlib==3.7.2` - Visualizaciones estáticas
+
+## 📚 Documentación Completa
+
+**Nueva en v1.1.0:** Toda la documentación técnica está organizada en la carpeta `docs/`:
+
+- **`docs/README.md`** - Índice principal de documentación
+- **`docs/GUIA_DASHBOARD_GITHUB_PAGES.md`** - Guía completa para publicar dashboards
+- **`docs/INSTRUCCIONES_CURSOR_AI.md`** - Prompt específico para Cursor AI
+- **`docs/RESUMEN_SOLUCION_404.md`** - Solución al error 404 más común
+- **`docs/INDICE_TECNICO.md`** - Índice específico para documentación técnica
+
+### 🚀 Para Futuros Proyectos
+
+Copia el prompt completo de `docs/INSTRUCCIONES_CURSOR_AI.md` para crear dashboards sin errores 404.
 
 ## Autor
 

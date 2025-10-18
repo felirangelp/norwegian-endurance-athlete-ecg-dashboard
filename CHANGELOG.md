@@ -5,6 +5,28 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2025-10-18
+
+### Añadido
+- **Documentación Organizada**: Carpeta `docs/` con toda la documentación técnica
+- **Guía Completa para Dashboards**: `GUIA_DASHBOARD_GITHUB_PAGES.md` con proceso paso a paso
+- **Instrucciones para Cursor AI**: `INSTRUCCIONES_CURSOR_AI.md` con prompt específico
+- **Resumen de Solución 404**: `RESUMEN_SOLUCION_404.md` con problema y solución documentados
+- **Documentación de GitHub**: Guías completas para configuración y GitHub Pages
+- **Índices de Navegación**: `README.md` y `INDICE_TECNICO.md` para fácil acceso
+- **Templates Listos**: Configuraciones y prompts listos para futuros proyectos
+
+### Mejorado
+- **Organización del Proyecto**: Documentación separada y organizada
+- **Accesibilidad**: Fácil navegación entre diferentes tipos de documentación
+- **Reutilización**: Templates y guías para proyectos futuros
+- **Troubleshooting**: Soluciones documentadas para problemas comunes
+
+### Solucionado
+- **Error 404 en GitHub Pages**: Problema completamente documentado y solucionado
+- **Archivos HTML ignorados**: Configuración correcta de `.gitignore` documentada
+- **Proceso de publicación**: Guía completa para evitar errores futuros
+
 ## [1.0.0] - 2025-10-18
 
 ### Añadido
