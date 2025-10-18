@@ -104,5 +104,6 @@ git check-ignore dashboard.html
 
 **Fecha:** Octubre 2025  
 **Proyecto:** Norwegian Endurance Athlete ECG Database  
+**Autores:** Felipe Rangel, Nicolás Torres  
 **Estado:** ✅ Completamente funcional  
 **Documentación:** ✅ Completa para futuros proyectos

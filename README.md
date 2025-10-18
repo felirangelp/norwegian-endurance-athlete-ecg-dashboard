@@ -1,6 +1,6 @@
 # Dashboard ECG - Atletas de Resistencia Noruegos
 
-**Versión:** 1.1.0 | **Última actualización:** Octubre 2025
+**Versión:** 1.1.0 | **Autores:** Felipe Rangel, Nicolás Torres | **Última actualización:** Octubre 2025
 
 ## 🌐 Ver Dashboard en Línea
 
@@ -195,7 +195,9 @@ python main.py
 
 Copia el prompt completo de `docs/INSTRUCCIONES_CURSOR_AI.md` para crear dashboards sin errores 404.
 
-## Autor
+## Autores
+
+**Felipe Rangel** y **Nicolás Torres**
 
 Proyecto desarrollado como parte del curso de Procesamiento de Señales Biológicas, implementando las técnicas vistas durante el semestre.
 

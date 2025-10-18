@@ -112,7 +112,7 @@ ls docs/
 ## 📞 **Soporte y Contacto**
 
 - **Proyecto:** Norwegian Endurance Athlete ECG Database
-- **Autor:** Felipe Rangel
+- **Autores:** Felipe Rangel, Nicolás Torres
 - **Institución:** Pontificia Universidad Javeriana
 - **Curso:** Procesamiento de Señales Biológicas
 - **Semestre:** 2025-1
@@ -120,5 +120,5 @@ ls docs/
 ---
 
 **Última actualización:** Octubre 2025  
-**Versión:** 1.0.0  
+**Versión:** 1.1.0  
 **Estado:** ✅ Completamente funcional

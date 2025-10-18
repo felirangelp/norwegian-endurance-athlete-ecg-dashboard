@@ -7,6 +7,8 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [1.1.0] - 2025-10-18
 
+**Autores:** Felipe Rangel, Nicolás Torres
+
 ### Añadido
 - **Documentación Organizada**: Carpeta `docs/` con toda la documentación técnica
 - **Guía Completa para Dashboards**: `GUIA_DASHBOARD_GITHUB_PAGES.md` con proceso paso a paso
@@ -28,6 +30,8 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 - **Proceso de publicación**: Guía completa para evitar errores futuros
 
 ## [1.0.0] - 2025-10-18
+
+**Autores:** Felipe Rangel, Nicolás Torres
 
 ### Añadido
 - **Dashboard ECG Interactivo**: Visualización completa de 28 atletas de resistencia noruegos
