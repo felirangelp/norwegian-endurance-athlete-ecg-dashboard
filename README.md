@@ -1,6 +1,6 @@
 # Dashboard ECG - Atletas de Resistencia Noruegos
 
-**Versión:** 1.1.0 | **Autores:** Felipe Rangel, Nicolás Torres | **Última actualización:** Octubre 2025
+**Versión:** 1.1.1 | **Autores:** Felipe Rangel, Nicolás Torres | **Última actualización:** Octubre 2025
 
 ## 🌐 Ver Dashboard en Línea
 
