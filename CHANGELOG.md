@@ -5,9 +5,21 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.2] - 2025-10-18
+
+**Autores:** Felipe Rangel, Nicolás Torres, Jorge
+
+### Añadido
+- **Tercer Autor**: Jorge agregado como coautor del proyecto
+- **Actualización de Versión**: Incremento a versión 1.1.2
+
+### Mejorado
+- **Reconocimiento de Autores**: Los tres autores correctamente registrados en todos los archivos
+- **Consistencia de Información**: Autores actualizados en toda la documentación
+
 ## [1.1.0] - 2025-10-18
 
-**Autores:** Felipe Rangel, Nicolás Torres
+**Autores:** Felipe Rangel, Nicolás Torres, Jorge
 
 ### Añadido
 - **Documentación Organizada**: Carpeta `docs/` con toda la documentación técnica
@@ -31,7 +43,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ## [1.0.0] - 2025-10-18
 
-**Autores:** Felipe Rangel, Nicolás Torres
+**Autores:** Felipe Rangel, Nicolás Torres, Jorge
 
 ### Añadido
 - **Dashboard ECG Interactivo**: Visualización completa de 28 atletas de resistencia noruegos
